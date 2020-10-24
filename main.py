@@ -12,7 +12,7 @@ from random_choose import get_result
 from blockchain import block_io
 import blockchain
 
-token = '380543472:AAHQHaEQksWEQgMHzxG0p7L253HRvQF_Pg0'
+token = '1159558042:AAE-Nwje9rkFdl2PpzebLkmaXJslTKdX-vo'
 bot = telebot.TeleBot(token)
 decision = None
 print ("started work", flush=True)
@@ -122,7 +122,7 @@ def save_bet_size(bet_size, user_id):
             user.user_bet_size = int(bet_size)
             user.user_balance -= int(bet_size)
             db_session.flush()
-            print(user.user_bet_size) 
+            print(user.user_bet_size)
             bot.send_message(user.user_chat_id, messages.finished_message)
         else:
             bot.send_message(user.user_chat_id, messages.not_enough)
@@ -207,7 +207,7 @@ def play_game():
             except Exception as e:
                 print (e, flush=True)
         time.sleep(60)
-    
+
 thread = Thread(target=play_game, args=())
 thread.setDaemon(True)
 thread.start()

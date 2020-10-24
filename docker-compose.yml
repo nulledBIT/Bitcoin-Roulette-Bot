@@ -17,7 +17,7 @@ services:
      - ./db_restore:/docker-entrypoint-initdb.d
    restart: always
    environment:
-     MYSQL_ROOT_PASSWORD: litva
-     MYSQL_DATABASE: bitcoin_bot
-     MYSQL_USER: bitcoin_bot
-     MYSQL_PASSWORD: bitcoin_bot
+     MYSQL_ROOT_PASSWORD:
+     MYSQL_DATABASE: roulette
+     MYSQL_USER: root
+     MYSQL_PASSWORD:

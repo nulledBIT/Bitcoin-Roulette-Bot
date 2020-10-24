@@ -3,7 +3,7 @@ from sqlalchemy.orm import scoped_session, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 import redis
 
-redisConn = redis.StrictRedis(host='redis', port=6379, db=0)
+redisConn = redis.StrictRedis(host='localhost', port=6379, db=0)
 
 # Создаем пул соединения с БД
 engine = create_engine('mysql://%s:%s@%s/%s?charset=utf8mb4' % ("root", "litva", "mysql", "bitcoin_bot"), encoding=' utf-8',convert_unicode=True, pool_recycle=1800)
