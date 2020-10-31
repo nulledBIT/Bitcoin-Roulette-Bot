@@ -12,7 +12,7 @@ from random_choose import get_result
 from blockchain import block_io
 import blockchain
 
-token = '1159558042:AAE-Nwje9rkFdl2PpzebLkmaXJslTKdX-vo'
+token = '1093331195:AAG_GW8OVIG2FOEnWFbLMyV40Y3RmUnmx_M'
 bot = telebot.TeleBot(token)
 decision = None
 print ("started work", flush=True)
